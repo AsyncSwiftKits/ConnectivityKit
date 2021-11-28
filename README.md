@@ -20,6 +20,10 @@ Simply call the `start` function and provide a path handler to get updates. Call
 
 Support for Combine is provided by `ConnectivityObserver` which has the same `start` and `cancel` functions as `ConnectivityMonitor` but it returns `AnyPublisher`. It can be used to observe path changes.
 
+# Demo App
+
+See [Connectivity] for a demo app which runs on macOS and iOS.
+
 ## Swift Package
 
 This project is set up as a Swift Package which can be used by the [Swift Package Manager] (SPM) with Xcode. In your `Package.swift` add this package with the code below.
@@ -44,3 +48,4 @@ If your Deployment Target for any of Apple's platforms supports [Network Framewo
 [System Configuration Framework]: https://developer.apple.com/documentation/systemconfiguration
 [Introduction to Network.framework]: https://developer.apple.com/videos/play/wwdc2018/715
 [Swift Package Manager]: https://swift.org/package-manager/
+[Connectivity]: https://github.com/brennanMKE/Connectivity
