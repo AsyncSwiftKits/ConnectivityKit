@@ -1,3 +1,7 @@
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FbrennanMKE%2FConnectivityKit%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/brennanMKE/ConnectivityKit)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FbrennanMKE%2FConnectivityKit%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/brennanMKE/ConnectivityKit)
+
 # ConnectivityKit
 
 Adapting to changes in network connectivity can allow for suspending or resuming network activity. When entering an elevator or going through a tunnel our devices typically lose connectivity completely. We also move out of range of WiFi and transition to a cellular connection. Apple's [Network Framework] includes [NWPathMonitor] which provides updates in response to changes to [NWPath]. This framework was introduced in 2018 and is a modern replacement to [SCNetworkReachability], simply known as the Reachability API which does not support many of the features supported by modern network protocols such as WiFi 6 and 5G.
