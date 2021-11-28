@@ -23,6 +23,11 @@ public enum ConnectivityInterfaceType: String {
 public struct ConnectivityInterface {
     public let name: String
     public let type: ConnectivityInterfaceType
+
+    public init(name: String, type: ConnectivityInterfaceType) {
+        self.name = name
+        self.type = type
+    }
 }
 
 extension ConnectivityInterface: CustomStringConvertible {
@@ -44,6 +49,20 @@ public struct ConnectivityPath {
     public let supportsDNS: Bool
     public let supportsIPv4: Bool
     public let supportsIPv6: Bool
+
+    public init(status: ConnectivityStatus = .unsatisfied,
+                availableInterfaces: [ConnectivityInterface] = [],
+                isExpensive: Bool = false,
+                supportsDNS: Bool = false,
+                supportsIPv4: Bool = false,
+                supportsIPv6: Bool = false) {
+        self.status = status
+        self.availableInterfaces = availableInterfaces
+        self.isExpensive = isExpensive
+        self.supportsDNS = supportsDNS
+        self.supportsIPv4 = supportsIPv4
+        self.supportsIPv6 = supportsIPv6
+    }
 }
 
 extension ConnectivityPath: CustomStringConvertible {

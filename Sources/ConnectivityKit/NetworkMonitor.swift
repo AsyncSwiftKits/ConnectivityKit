@@ -79,6 +79,9 @@ class NetworkMonitor: AnyConnectivityMonitor {
     @available(iOS 12.0, macOS 10.14, tvOS 12.0, watchOS 6.0, *)
     func cancel() {
         guard let monitor = monitor else { return }
+        defer {
+            self.monitor = nil
+        }
         monitor.cancel()
     }
 

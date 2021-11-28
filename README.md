@@ -12,6 +12,10 @@ This package includes `ConnectivityMonitor` which internally uses `NetworkMonito
 
 Simply call the `start` function and provide a path handler to get updates. Call the `cancel` function to discontinue monitoring.
 
+## Combine
+
+Support for Combine is provided by `ConnectivityObserver` which has the same `start` and `cancel` functions as `ConnectivityMonitor` but it returns `AnyPublisher`. It can be used to observe path changes.
+
 ## Swift Package
 
 This project is set up as a Swift Package which can be used by the [Swift Package Manager] (SPM) with Xcode. In your `Package.swift` add this package with the code below.
